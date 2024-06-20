@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    /* background: #e466ef; */
+  background: linear-gradient(to right, #66D9EF, #4583ff);
+}
+
+nav {
+    width: 100%;
+    height: 10vh;
+    background-color: #ff8787;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.leftnav p{
+    font-size: 25px;
+}
+
+
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 20px;
+    font-size: 18px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+nav ul li a:hover{
+    opacity: 0.8;
+}
+
+.container{
+    display: flex;
+    margin: 70px;
+    justify-content: center;
+    align-items: center;
+}
+
+.leftcontainer{
+    height: 80%;
+    width: 40%;
+    background-color: wheat;
+    margin-right: 23px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 34px;
+    -webkit-border-radius: 34px;
+    -moz-border-radius: 34px;
+    -ms-border-radius: 34px;
+    -o-border-radius: 34px;
+}
+
+input{
+    text-align: center;
+}
+
+input::placeholder{
+    text-align: center;
+}
+
+.rightcontainer{
+    height: 80%;
+    border-radius: 34px;
+    background-color: rgb(255, 202, 104);
+    width: 40%;
+    margin-left: 23px;
+    -webkit-border-radius: 34px;
+    -moz-border-radius: 34px;
+    -ms-border-radius: 34px;
+    -o-border-radius: 34px;
+}
+
+#currclimate{
+    display: none;
+}
+
+.left{
+    margin: 25px 0;
+    font-size: 20px;
+}
+
+.about{
+    font-size: 20px;
+}
+
+.search{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+#search{
+    height: 40px;
+    width: 80px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border: 2px solid burlywood;
+    font-size: 15px;
+    margin: auto;
+    margin-bottom: 10px;
+    background-color: rgb(82, 130, 226);
+    color: white;
+}
+
+
+#search:hover{
+    color: rgb(250, 252, 255);
+    background-color: rgb(227, 123, 123);
+    cursor: pointer;
+    
+}
+input{
+    border: 0px solid rgb(255, 189, 189);
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    height: 40px;
+}
+
+/* .rightcontainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+} */
+
+.rightcontainer{
+    display: none;
+}
+
+.info p, #name{
+    font-size: 23px;
+    margin: 35px 0;
+    /* padding: 28px; */
+}
+
+.weather img{
+    margin-top: 23px;
+}
+
+.weather p{
+    margin: 20px;
+    margin-top: 23px;
+    font-size: 23px;
+}
+
+img{
+    height: 100px;
+    margin: auto;
+}
+
+.windtemp{
+    display: flex;
+    justify-content: space-around;
+    width: 400px;
+    margin: 90px;
+    font-size: 23px;
+}
+
+.num{
+    padding-top: 15px;
+    font-size: 26px;
+}
+
+@media screen and (max-width:700px) {
+
+    nav{
+        height: 100px;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    
+    }
+
+    .leftnav p{
+        font-size: 15px;
+    }
+
+    nav ul{
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav ul li{
+        font-size: 15px;
+    }
+    
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .leftcontainer{
+        width: 300px;
+        height: 300px;
+    }
+
+    .rightcontainer{
+        width: 300px;
+        /*background: linear-gradient(to right, #66D9EF, #4583ff);
+        */background-color: rgb(255, 202, 104);
+        /* border-radius: 0; */
+        /*height: 50vh;
+        */margin-right: 32px;
+        margin-top: 23px;
+    }
+    
+    .windtemp{
+        display: flex;
+        flex-direction: column;
+        justify-self: center;
+        align-items: center;
+    }
+
+    .windtemp img{
+        margin: 27px 0;
+    }
+    
+    #name{
+        display: block;
+        font-size: 20px;
+    }
+
+    .info p{
+        margin: auto;
+        margin-bottom: 23px;
+    }
+
+    .weather img{
+        margin-top: 23px;
+    }
+    
+
+}

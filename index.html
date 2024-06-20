@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>See Weather by you</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <nav>
+            <div class="leftnav">
+                <p>Welcome to SeeWeather.com</p>
+            </div>
+            <div class="rightnav">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="https://www.linkedin.com/in/mohan-krishna-battala/" target="_blank">About Me</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="container">
+            <div class="leftcontainer">
+                <p class="left">Enter the city name here</p>
+                <div class="search">
+                    <input class="left" type="text" placeholder="Enter your city" id="cityName" spellcheck="false">
+                    <button id="search" type="submit">Search</button>
+                </div>
+            </div>
+            <div class="rightcontainer">
+                <div class="info">
+                    <p>Weather of</p> <span id="name"></span>
+                </div>
+                <div class="weather">
+                    <img src="/climate images/cloudy.png"  id="currclimate">
+                    <p><span id="climate"></span></p>
+                </div>
+                <div class="windtemp">
+                    <div class="temperature">
+                        <img src="/climate images/temperature.jpg" alt="">
+                        <p>Temperature</p>
+                        <div class="num" id="tempvalue">
+                            <span id="tempvalue"></span> °C
+                        </div>
+                    </div>
+                    <div class="wind">
+                        <img src="/climate images/windy.png" alt="">
+                        <p>Wind</p>
+                        <div class="num">
+                            <span id="windvalue"></span> km/h
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
